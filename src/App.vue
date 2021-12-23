@@ -1,7 +1,7 @@
 <template>
     <div id="app">
-        <Navbar :user="user" v-bind:logged-in="isLoggedIn"/>
-        <router-view v-on:getUserInfo="getUserInfo" v-on:logOut="logOut" :user="user" :logged-in="isLoggedIn"/>
+        <Navbar :user="user" v-bind:loggedIn="isLoggedIn"/>
+        <router-view v-on:getUserInfo="getUserInfo" v-on:logOut="logOut" :user="user" :loggedIn="isLoggedIn"/>
         <router-view name="a" v-on:getUserInfo="getUserInfo" v-on:logOut="logOut"/>
         <router-view name="b" v-on:getUserInfo="getUserInfo" v-on:logOut="logOut"/>
         <router-view name="c" v-on:getUserInfo="getUserInfo" v-on:logOut="logOut"/>
